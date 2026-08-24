@@ -1,16 +1,32 @@
-let div = document.querySelector(".card");
+// Small Mini Challenge :--------
 
-div.classList.add("shadow");
+let div = document.createElement("div");
+let body = document.querySelector("body")
 
-let newDiv = document.querySelector(".shadow");
+div.setAttribute("id" , "alert-banner");
 
-console.log(newDiv);
+div.classList.add("card" , "active");
 
-// Classlist add use to add new class without remove old class
+div.classList.remove("hidden");
 
-let remove = newDiv.classList.remove("shadow");
+div.style.backgroundColor = "black" ;
+div.style.color = "white" ;
+div.style.padding = "16px" ;
+div.style.borderRadius = "10px";
+div.style.fontFamily = "sans-serif";
+div.style.height = "200px";
+div.style.width = "200px";
 
-console.log(remove);
+
 console.log(div);
 
-// CLass List Remove To Use remove any class without removing old class
+div.innerHTML = ("<h3> Task Completed </h3>");
+div.innerHTML += ("<p> Your file has been successfully uploaded. </p>");
+
+let getAttr = div.getAttribute("id");
+console.log(getAttr);
+
+
+document.body.prepend(div);
+//  div.remove()
+
