@@ -1,7 +1,9 @@
-let para = document.querySelector(".para");
-para.remove()
+let div = document.querySelector(".card");
 
-let check = document.querySelector(".para")
-console.log(check);
+div.classList.add("shadow");
 
-// Learn Remove To Remove any element in html dom structure.
+let newDiv = document.querySelector(".shadow");
+
+console.log(newDiv);
+
+// Classlist add use to add new class without remove old class
