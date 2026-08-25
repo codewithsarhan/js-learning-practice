@@ -1,32 +1,7 @@
-// Small Mini Challenge :--------
-
-let div = document.createElement("div");
-let body = document.querySelector("body")
-
-div.setAttribute("id" , "alert-banner");
-
-div.classList.add("card" , "active");
-
-div.classList.remove("hidden");
-
-div.style.backgroundColor = "black" ;
-div.style.color = "white" ;
-div.style.padding = "16px" ;
-div.style.borderRadius = "10px";
-div.style.fontFamily = "sans-serif";
-div.style.height = "200px";
-div.style.width = "200px";
-
-
-console.log(div);
-
-div.innerHTML = ("<h3> Task Completed </h3>");
-div.innerHTML += ("<p> Your file has been successfully uploaded. </p>");
-
-let getAttr = div.getAttribute("id");
-console.log(getAttr);
-
-
-document.body.prepend(div);
-//  div.remove()
+let img = document.querySelector("#myPic");
+let attr  = img.getAttribute("src");
+console.log(attr);
+img.setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1nV5HX-sT5M9Magwp8s7VtxN8E54DIXLOo-y-dbG4Rw&s=10");
+let getattr = img.getAttribute("src");
+console.log(getattr);
 
