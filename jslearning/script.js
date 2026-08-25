@@ -1,7 +1,4 @@
-let div = document.querySelector("#container");
-
-let h1 = document.createElement("h1");
-
-h1.innerText = "allow to web dev";
-
-div.prepend(h1)
+let myBtn = document.querySelector("#myBtn");
+myBtn.classList.add("active");
+console.log(myBtn);
+myBtn.classList.remove("btn");
