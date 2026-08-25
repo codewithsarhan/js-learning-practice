@@ -1,5 +1,7 @@
-let para = document.querySelector("#heading");
+let div = document.querySelector("#container");
 
-para.style.color = "yellow";
-para.style.backgroundColor = "black";
-para.style.fontSize = "25px";
+let h1 = document.createElement("h1");
+
+h1.innerText = "allow to web dev";
+
+div.prepend(h1)
