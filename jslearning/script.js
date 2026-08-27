@@ -1,20 +1,31 @@
-let magicBtn = document.createElement("button");
-let body = document.querySelector("body");
-document.body.append(magicBtn);
-magicBtn.innerText = "Click Me";
-magicBtn.style.padding = "50px";
-magicBtn.style.border = "20px solid black";
-magicBtn.style.backgroundColor = "blue";
-magicBtn.style.color = "white";
-magicBtn.style.fontSize = "50px";
-magicBtn.style.margin = "50px";
+let toggleBtn = document.querySelector("#mode");
+let body = document.querySelector("body")
+let currmode = "light" ;
 
-body.style.display = "flex";
-body.style.justifyContent = "center";
 
-const magicBtnMagic = () => {
-  magicBtn.style.backgroundColor = "green";
-  magicBtn.innerText = "You CLick Me";
-};
+toggleBtn.addEventListener( "click" , () => {
 
-magicBtn.addEventListener("click", magicBtnMagic);
+if (currmode === "light") {
+
+  body.style.backgroundColor = "black" ;
+  currmode = "dark"
+  toggleBtn.style.backgroundColor = "White";
+  toggleBtn.style.color = "black";
+  toggleBtn.style.borderRadius = "5px"
+  toggleBtn.innerHTML = "Black Mode"
+
+
+  
+}else {
+  
+body.style.backgroundColor = "white";
+currmode = "light"
+toggleBtn.style.backgroundColor = "black";
+toggleBtn.style.color = "white";
+  toggleBtn.innerHTML = "Light Mode"
+
+
+}
+
+
+})
