@@ -1,31 +1,15 @@
-let toggleBtn = document.querySelector("#mode");
-let body = document.querySelector("body")
-let currmode = "light" ;
+let game = document.querySelector(".game");
+let clickBtn = document.querySelector(".button");
+
+let winingPatterns = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
 
 
-toggleBtn.addEventListener( "click" , () => {
-
-if (currmode === "light") {
-
-  body.style.backgroundColor = "black" ;
-  currmode = "dark"
-  toggleBtn.style.backgroundColor = "White";
-  toggleBtn.style.color = "black";
-  toggleBtn.style.borderRadius = "5px"
-  toggleBtn.innerHTML = "Black Mode"
-
-
-  
-}else {
-  
-body.style.backgroundColor = "white";
-currmode = "light"
-toggleBtn.style.backgroundColor = "black";
-toggleBtn.style.color = "white";
-  toggleBtn.innerHTML = "Light Mode"
-
-
-}
-
-
-})
