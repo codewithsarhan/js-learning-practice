@@ -93,3 +93,9 @@ let enabledBox = () => {
 resetBtn.addEventListener("click", () => {
   resetGame();
 });
+
+startBtn.addEventListener("click" , () => {
+
+resetGame();
+
+})
