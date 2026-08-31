@@ -10,47 +10,73 @@
 
 <body>
 
-    <main class="main-section">
-        <section class="control-section">
-            <section class="score-sec">
-                <span class="plyrX">Player X Score</span>
-                <span>--- ||||---</span>
-                <span class="plyrO">Player O Score</span>
-            </section>
 
-            <section>
-                <h2 class="game-name">Tic Tac Toe</h2>
-            </section>
+    <!-- Rock Paper Scissor Game -->
 
-            <section>
-                <h2 class="hiddenMsg">Winner</h2>
-            </section>
 
-            <section class="game-section">
-                <div class="game">
+    <header class="header">
 
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
-                    <button class="button"></button>
 
-                </div>
-            </section>
-
-            <section class="rs-st-btn-sec">
-
-                <button class="reset-btn">Reset</button>
-                <button class="start-btn">Start</button>
-
-            </section>
+        <section class="headingDiv">
+        <h1 class="topHeading">Rock Paper Scissor</h1>
         </section>
-    </main>
+    </header>
 
+
+
+    <main>
+
+   
+        <section class="choices-section">
+
+            <div class="choices rock-choice">
+                <img src="rock.png" alt="rock image" class="rockImg">
+            </div>
+
+            <div class="choices paper-choice">
+                <img src="paper.png" alt="paper image" class="paperImg">
+            </div>
+
+            <div class="choices scissor-choice">
+                <img src="scissor.png" alt="scissor image" class="scissorImg">
+            </div>
+
+        </section>
+        
+        <!-- Score Section -->
+
+        <section class="score-section">
+
+            <div class="yourScoreDiv">
+
+                <span class="yourScore scoresCount">0</span>
+
+                <span class="names">You</span>
+            </div>
+
+            <div class="compScoreDiv">
+
+                <span class="compScore scoresCount">0</span>
+                 <span class="names">Comp</span>
+
+            </div>
+
+        </section>
+
+        <!-- Start Game sec -->
+
+        <section class="startSec">
+
+           <div class="msgDiv">
+
+            <h1 class="msg">Play Your Game</h1>
+
+           </div>
+
+        </section>
+
+
+    </main>
 
     <script src="script.js"></script>
 </body>
