@@ -11,74 +11,34 @@
 <body>
 
 
-    <!-- Rock Paper Scissor Game -->
+<input type="text" class="mainInput">
+
+<select name="dropd0wn" id="" class="priyDrpdwn">
+
+<option value="high">High</option>    
+<option value="medium">Medium</option>    
+<option value="low">Low</option>    
+
+</select>
+
+<button class="addtaskBtn">Add Task</button>
+
+<label for="">Filter :</label>
+    <select name="dropd0wn" id="" class="fliter">
+        <option value="all" class="filterOption">All</option>
+        <option value="high" class="filterOption">High</option>
+        <option value="medium" class="filterOption">Medium</option>
+        <option value="low" class="filterOption">Low</option>
+        <option value="complete" class="filterOption">Completed</option>
+    </select>
+
+    
+    
+  
 
 
-    <header class="header">
 
-
-        <section class="headingDiv">
-            <h1 class="topHeading">Rock Paper Scissor</h1>
-        </section>
-    </header>
-
-
-
-    <main>
-
-
-        <section class="choices-section">
-
-            <div class="choices rock-choice" id="rock">
-                <img src="rock.png" alt="rock image" class="rockImg">
-            </div>
-
-            <div class="choices paper-choice" id="paper">
-                <img src="paper.png" alt="paper image" class="paperImg">
-            </div>
-
-            <div class="choices scissor-choice" id="scissor">
-                <img src="scissor.png" alt="scissor image" class="scissorImg">
-            </div>
-
-        </section>
-
-        <!-- Score Section -->
-
-        <section class="score-section">
-
-            <div class="yourScoreDiv">
-
-                <span class="yourScore scoresCount">0</span>
-
-                <span class="names">You</span>
-            </div>
-
-            <div class="compScoreDiv">
-
-                <span class="compScore scoresCount">0</span>
-                <span class="names">Comp</span>
-
-            </div>
-
-        </section>
-
-        <!-- Start Game sec -->
-
-        <section class="startSec">
-
-            <div class="msgDiv">
-
-                <h1 class="msg">Play Your Game</h1>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
