@@ -1,27 +1,23 @@
-let toggleThemeBtn = document.querySelector(".toggleThemeBtn");
-let body = document.querySelector("body");
-let modeHeading = document.querySelector(".modeHeading");
-let countertext = document.querySelector(".countertext");
+let textArea = document.querySelector(".textArea");
+let initialCharacter = document.querySelector(".initialCharacter");
 
-let initialCount = 0;
 
-let backgroundColor = "light";
+textArea.addEventListener( "input" , () => {
 
-toggleThemeBtn.addEventListener("click", () => {
-  if (backgroundColor === "light") {
-    body.style.backgroundColor = "black";
-    body.style.color = "white";
-    modeHeading.innerText = "Current Theme: Dark";
-    backgroundColor = "dark";
-  } else if (backgroundColor === "dark") {
-    body.style.backgroundColor = "white";
-    body.style.color = "black";
-    modeHeading.innerText = "Current Theme: light";
-    backgroundColor = "light";
-  }
+let count = textArea.value.length;
+initialCharacter.innerText = `Characters : ${count}  / 50`
 
-  initialCount++;
-  console.log(initialCount);
+if (count > 50) {
+  
+  textArea.style.color = "red";
+  initialCharacter.innerText = `Characters : ${count}  / 50`;
+  initialCharacter.style.color = "red";
 
-  countertext.innerText = `Change Theme ${initialCount} times`;
-});
+}else{
+
+textArea.style.color = "black"
+initialCharacter.style.color = "black";
+}
+
+
+})
