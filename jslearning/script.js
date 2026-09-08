@@ -1,22 +1,37 @@
-let score = "234abc";
-console.log(typeof score);
+let celciusInput = document.querySelector(".celciusInput")
+let fahrenheitInput = document.querySelector(".fahrenheitInput")
+let totalSeconds = document.querySelector(".totalSecondsInput")
+
+celciusInput.addEventListener("input" , () =>{
+
+let celcius = parseFloat(celciusInput.value);
+let celciusToFahrenheit = (fahrenheit = (celcius * 1.8) + 32);
+console.log(`Celcius Value : ${celciusToFahrenheit}`);
 
 
-let scoreNumber = Number(score);
-console.log(typeof scoreNumber);
-console.log( scoreNumber);
-
-let score2 = 2 ;
-
-console.log(typeof score2);
-
-let score2Number = Boolean(score2);
-console.log(score2Number);
-console.log(typeof score2Number);
+})
 
 
-let score3 = 100;
+fahrenheitInput.addEventListener("input", () => {
 
-let symbolValue = Symbol(score3);
-console.log(symbolValue);
-console.log(typeof symbolValue);
+let fahrenheit = parseFloat(fahrenheitInput.value);
+let fahrenheitToCelcius =(celcius = (fahrenheit - 32) / 1.8);
+console.log(`fahrenheit Value : ${fahrenheitToCelcius}`);
+
+
+})
+
+
+totalSeconds.addEventListener("input" , () => {
+
+let seconds = parseFloat(totalSeconds.value);
+
+let secToMin = (Math.floor(seconds / 60));
+let savedSec = seconds % 60 ;
+
+console.log(`Sec to Min Value : ${secToMin}`);
+console.log(`Save Sec Value : ${savedSec}`);
+
+
+})
+
