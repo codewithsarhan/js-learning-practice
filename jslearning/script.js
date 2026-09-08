@@ -1,23 +1,22 @@
-let textArea = document.querySelector(".textArea");
-let initialCharacter = document.querySelector(".initialCharacter");
+let score = "234abc";
+console.log(typeof score);
 
 
-textArea.addEventListener( "input" , () => {
+let scoreNumber = Number(score);
+console.log(typeof scoreNumber);
+console.log( scoreNumber);
 
-let count = textArea.value.length;
-initialCharacter.innerText = `Characters : ${count}  / 50`
+let score2 = 2 ;
 
-if (count > 50) {
-  
-  textArea.style.color = "red";
-  initialCharacter.innerText = `Characters : ${count}  / 50`;
-  initialCharacter.style.color = "red";
+console.log(typeof score2);
 
-}else{
-
-textArea.style.color = "black"
-initialCharacter.style.color = "black";
-}
+let score2Number = Boolean(score2);
+console.log(score2Number);
+console.log(typeof score2Number);
 
 
-})
+let score3 = 100;
+
+let symbolValue = Symbol(score3);
+console.log(symbolValue);
+console.log(typeof symbolValue);
