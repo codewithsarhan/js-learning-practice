@@ -1,37 +1,61 @@
-let celciusInput = document.querySelector(".celciusInput")
-let fahrenheitInput = document.querySelector(".fahrenheitInput")
-let totalSeconds = document.querySelector(".totalSecondsInput")
+// Js Comparison Operator Mini Challenge
 
-celciusInput.addEventListener("input" , () =>{
+// User "A" Cart Details
 
-let celcius = parseFloat(celciusInput.value);
-let celciusToFahrenheit = (fahrenheit = (celcius * 1.8) + 32);
-console.log(`Celcius Value : ${celciusToFahrenheit}`);
+let userA = {
+  cartTotal: 8000,
+  isPremiumMember: true,
+  userAge: 17,
+};
 
+if (userA.cartTotal >= 10000) {
+  console.log("You Get 50% Discount");
+} else if (userA.userAge >= 18) {
+  console.log("You Are Elegible");
+} else if (userA.isPremiumMember === true) {
+  console.log("You Are Premium Member");
+} else if (userA.cartTotal >= 10000 || userA.isPremiumMember === true) {
+  console.log("You Get Free Shipping All Items");
+} else {
+  console.log("You Are No Elegible !!!");
+}
 
-})
+// User "B" Cart Details
 
+let userB = {
+  cartTotal: 12000,
+  isPremiumMember: true,
+  userAge: 22,
+};
 
-fahrenheitInput.addEventListener("input", () => {
+if (userB.cartTotal >= 10000) {
+  console.log("You Get 50% Discount");
+} else if (userB.userAge >= 18) {
+  console.log("You Are Elegible");
+} else if (userB.isPremiumMember === true) {
+  console.log("You Are Premium Member");
+} else if (userB.cartTotal >= 10000 || userB.isPremiumMember === true) {
+  console.log("You Get Free Shipping All Items");
+} else {
+  console.log("You Are No Elegible !!!");
+}
 
-let fahrenheit = parseFloat(fahrenheitInput.value);
-let fahrenheitToCelcius =(celcius = (fahrenheit - 32) / 1.8);
-console.log(`fahrenheit Value : ${fahrenheitToCelcius}`);
+// User "C" Cart Details
 
+let userC = {
+  cartTotal: 10000,
+  isPremiumMember: false,
+  userAge: 18,
+};
 
-})
-
-
-totalSeconds.addEventListener("input" , () => {
-
-let seconds = parseFloat(totalSeconds.value);
-
-let secToMin = (Math.floor(seconds / 60));
-let savedSec = seconds % 60 ;
-
-console.log(`Sec to Min Value : ${secToMin}`);
-console.log(`Save Sec Value : ${savedSec}`);
-
-
-})
-
+if (userC.cartTotal >= 10000) {
+  console.log("You Get 50% Discount");
+} else if (userC.userAge >= 18) {
+  console.log("You Are Elegible");
+} else if (userC.isPremiumMember === true) {
+  console.log("You Are Premium Member");
+} else if (userC.cartTotal >= 10000 || userC.isPremiumMember === true) {
+  console.log("You Get Free Shipping All Items");
+} else {
+  console.log("You Are No Elegible !!!");
+}
