@@ -1,61 +1,33 @@
-// Js Comparison Operator Mini Challenge
+// primitive Data Types numbers,boolean,string,null,undefined,symbol,Bigint;
 
-// User "A" Cart Details
+// Refrence Type (Non Primitive Data Types);
 
-let userA = {
-  cartTotal: 8000,
-  isPremiumMember: true,
-  userAge: 17,
-};
+let stringValue = "sarhan ali";
+let numberValue = 120 ;
+let booleanValue = true ;
+let nullValue = null ;
+let undefinedValue = undefined ;
+let symbolValue = Symbol("123");
+let BigintValue = 1297732768276747387238273n;
 
-if (userA.cartTotal >= 10000) {
-  console.log("You Get 50% Discount");
-} else if (userA.userAge >= 18) {
-  console.log("You Are Elegible");
-} else if (userA.isPremiumMember === true) {
-  console.log("You Are Premium Member");
-} else if (userA.cartTotal >= 10000 || userA.isPremiumMember === true) {
-  console.log("You Get Free Shipping All Items");
-} else {
-  console.log("You Are No Elegible !!!");
+let myArray = [
+
+name = "Sarhan" ,
+classs = 10 ,
+ 
+]
+
+let myObject = {
+
+name : "Sarhan" ,
+class :  10 , 
+
 }
 
-// User "B" Cart Details
+let myFunction = () => {
 
-let userB = {
-  cartTotal: 12000,
-  isPremiumMember: true,
-  userAge: 22,
-};
+  
+console.log("Hello World");
 
-if (userB.cartTotal >= 10000) {
-  console.log("You Get 50% Discount");
-} else if (userB.userAge >= 18) {
-  console.log("You Are Elegible");
-} else if (userB.isPremiumMember === true) {
-  console.log("You Are Premium Member");
-} else if (userB.cartTotal >= 10000 || userB.isPremiumMember === true) {
-  console.log("You Get Free Shipping All Items");
-} else {
-  console.log("You Are No Elegible !!!");
-}
 
-// User "C" Cart Details
-
-let userC = {
-  cartTotal: 10000,
-  isPremiumMember: false,
-  userAge: 18,
-};
-
-if (userC.cartTotal >= 10000) {
-  console.log("You Get 50% Discount");
-} else if (userC.userAge >= 18) {
-  console.log("You Are Elegible");
-} else if (userC.isPremiumMember === true) {
-  console.log("You Are Premium Member");
-} else if (userC.cartTotal >= 10000 || userC.isPremiumMember === true) {
-  console.log("You Get Free Shipping All Items");
-} else {
-  console.log("You Are No Elegible !!!");
 }
